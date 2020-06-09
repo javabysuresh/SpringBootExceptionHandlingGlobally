@@ -16,6 +16,7 @@ public class BookController {
 	@GetMapping(value="/getBook")
 	public @ResponseBody Book getBookPriceById(@RequestParam("bookId")int bookId) {
 		
-		return bookService.findBookPricebyId(bookId);
+		Book book= bookService.findBookPricebyId(bookId);
+		return book;
 	}
 }
