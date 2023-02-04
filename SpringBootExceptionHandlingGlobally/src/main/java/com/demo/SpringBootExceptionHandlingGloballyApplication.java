@@ -10,7 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 public class SpringBootExceptionHandlingGloballyApplication {
 	
 	public static void main(String[] args) {
+		log.info("HELLO SURESH");
 		SpringApplication.run(SpringBootExceptionHandlingGloballyApplication.class, args);
-	}
+		log.info("HELLO SURI");
+		}
 
 }
